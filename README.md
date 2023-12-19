@@ -1,6 +1,6 @@
 # RJPOLICE_HACK_472_CyberKnights_6
 
-#HOW TO ACCESS DEMO
+# HOW TO ACCESS DEMO
 # Camera Registration System
 
 This project is a Camera Registration System developed using the MERN stack (MongoDB, Express.js, React.js, Node.js).
