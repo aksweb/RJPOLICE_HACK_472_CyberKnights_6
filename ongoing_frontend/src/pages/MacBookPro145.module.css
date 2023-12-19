@@ -1,0 +1,247 @@
+.groupChild,
+.groupItem {
+  position: absolute;
+  border-radius: 50px;
+  height: 76px;
+}
+.groupChild {
+  top: 0;
+  left: 0;
+  background-color: rgba(11, 218, 81, 0.74);
+  width: 1237px;
+}
+.groupItem {
+  top: 2px;
+  left: calc(50% + 9.5px);
+  background-color: rgba(23, 31, 211, 0.35);
+  width: 609px;
+}
+.forPolice,
+.forUser {
+  position: absolute;
+  top: 11px;
+  left: 107px;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  display: inline-block;
+  width: 394px;
+  height: 54px;
+}
+.forPolice {
+  left: 704px;
+  color: #fff;
+  width: 480px;
+  height: 58px;
+}
+.rectangleParent {
+  position: absolute;
+  top: 45px;
+  left: 138px;
+  width: 1237px;
+  height: 78px;
+  cursor: pointer;
+}
+.macbookPro145Child {
+  position: absolute;
+  top: 135px;
+  left: 352px;
+  border-radius: 50%;
+  background-color: #7df2a2;
+  width: 815px;
+  height: 756px;
+  opacity: 0.4;
+  mix-blend-mode: normal;
+}
+.macbookPro145Inner,
+.macbookPro145Item {
+  position: absolute;
+  top: 348.5px;
+  left: 441.5px;
+  border-radius: 50px;
+  background-color: #f9f0f0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  width: 612px;
+  height: 72px;
+  mix-blend-mode: linear-dodge;
+}
+.macbookPro145Inner {
+  top: 474.5px;
+}
+.password,
+.policeId {
+  position: absolute;
+  top: 364px;
+  left: 531px;
+  font-size: 40px;
+  letter-spacing: 0.18em;
+  display: inline-block;
+  font-weight: 500;
+  width: 467px;
+  height: 40px;
+}
+.password {
+  top: 492px;
+  left: 543px;
+}
+.rectangleIcon {
+  position: absolute;
+  top: 609px;
+  left: 604px;
+  border-radius: 50px;
+  width: 286px;
+  height: 71px;
+  object-fit: cover;
+  mix-blend-mode: color-burn;
+}
+.policeDetals,
+.signIn {
+  position: absolute;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.signIn {
+  top: 622px;
+  left: 658px;
+  font-size: 34px;
+  color: #171fd3;
+  width: 189px;
+  height: 49px;
+  cursor: pointer;
+}
+.policeDetals {
+  top: 254px;
+  left: 427px;
+  color: #675885;
+  width: 640px;
+  height: 58px;
+}
+.vectorIcon,
+.vectorIcon1,
+.vectorIcon2 {
+  position: absolute;
+  height: 2.23%;
+  width: 1.29%;
+  top: 73.01%;
+  right: 54.93%;
+  bottom: 24.76%;
+  left: 43.78%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.vectorIcon1,
+.vectorIcon2 {
+  height: 2.45%;
+  width: 1.6%;
+  right: 48.99%;
+  bottom: 24.53%;
+  left: 49.4%;
+}
+.vectorIcon2 {
+  height: 2.07%;
+  width: 1.65%;
+  right: 42.99%;
+  bottom: 24.92%;
+  left: 55.36%;
+}
+.ellipseDiv {
+  position: absolute;
+  top: 629px;
+  left: 1130px;
+  border-radius: 50%;
+  background-color: #7df2a2;
+  width: 349px;
+  height: 318px;
+  opacity: 0.4;
+  mix-blend-mode: normal;
+}
+.alreadyRegister,
+.clickHere {
+  position: absolute;
+  top: 709px;
+  left: 1132px;
+  font-size: 24px;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  color: #171fd3;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 349px;
+  height: 29px;
+}
+.clickHere {
+  top: 723px;
+  left: 1175px;
+  color: #675885;
+  width: 271px;
+  height: 50px;
+}
+.macbookPro145Child1 {
+  position: absolute;
+  top: 794px;
+  left: 1166px;
+  border-radius: 50px;
+  width: 286px;
+  height: 71px;
+  object-fit: cover;
+  mix-blend-mode: color-burn;
+  cursor: pointer;
+}
+.logIn {
+  position: absolute;
+  top: 805px;
+  left: 1219px;
+  font-size: 38px;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  color: #171fd3;
+  display: inline-block;
+  width: 189px;
+  height: 49px;
+}
+.addressBook {
+  position: absolute;
+  top: 457.9px;
+  left: 775.6px;
+  background-color: transparent;
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+}
+.vectorIcon3,
+.vectorIcon4 {
+  position: absolute;
+  height: 3.87%;
+  width: 4.1%;
+  top: 37.17%;
+  right: 62.57%;
+  bottom: 58.96%;
+  left: 33.33%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.vectorIcon4 {
+  top: 50.51%;
+  bottom: 45.62%;
+}
+.macbookPro145 {
+  position: relative;
+  background-color: #cefadc;
+  width: 100%;
+  height: 982px;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+  font-size: 48px;
+  color: #000;
+  font-family: Inter;
+}

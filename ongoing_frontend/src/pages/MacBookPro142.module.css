@@ -1,0 +1,260 @@
+.frameChild {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 618.5px);
+  border-radius: 50px;
+  background-color: rgba(23, 31, 211, 0.35);
+  width: 609px;
+  height: 76px;
+}
+.forPolice,
+.forUser {
+  position: absolute;
+  top: 11px;
+  left: 107px;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  display: inline-block;
+  width: 394px;
+  height: 54px;
+}
+.forPolice {
+  left: 704px;
+  color: #000;
+  width: 480px;
+  height: 58px;
+}
+.rectangleParent {
+  position: absolute;
+  top: 45px;
+  left: 138px;
+  border-radius: 50px;
+  background-color: rgba(11, 218, 81, 0.74);
+  width: 1237px;
+  height: 76px;
+  cursor: pointer;
+}
+.frameItem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: #7df2a2;
+  width: 815px;
+  height: 756px;
+  opacity: 0.4;
+  mix-blend-mode: normal;
+}
+.frameInner,
+.rectangleDiv {
+  position: absolute;
+  top: 213.5px;
+  left: 89.5px;
+  border-radius: 50px;
+  background-color: #f9f0f0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  width: 612px;
+  height: 72px;
+  mix-blend-mode: linear-dodge;
+}
+.rectangleDiv {
+  top: 339.5px;
+}
+.emailIdphone,
+.password {
+  position: absolute;
+  top: 229px;
+  left: 212px;
+  letter-spacing: 0.18em;
+  display: inline-block;
+  font-weight: 500;
+  color: #000;
+  width: 467px;
+  height: 40px;
+}
+.password {
+  top: 357px;
+  left: 191px;
+}
+.rectangleIcon {
+  position: absolute;
+  top: 474px;
+  left: 252px;
+  border-radius: 50px;
+  width: 286px;
+  height: 71px;
+  object-fit: cover;
+  mix-blend-mode: color-burn;
+  cursor: pointer;
+}
+.signIn,
+.userDetals {
+  position: absolute;
+  top: 487px;
+  left: 306px;
+  font-size: 34px;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 189px;
+  height: 49px;
+}
+.userDetals {
+  top: 120px;
+  left: 142px;
+  font-size: 48px;
+  color: #675885;
+  width: 513px;
+  height: 58px;
+}
+.vectorIcon,
+.vectorIcon1,
+.vectorIcon2 {
+  position: absolute;
+  height: 2.7%;
+  width: 1.73%;
+  top: 71.67%;
+  right: 70.81%;
+  bottom: 25.63%;
+  left: 27.46%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.vectorIcon1,
+.vectorIcon2 {
+  height: 2.97%;
+  width: 2.14%;
+  right: 62.87%;
+  bottom: 25.36%;
+  left: 34.99%;
+}
+.vectorIcon2 {
+  height: 2.5%;
+  width: 2.21%;
+  right: 54.83%;
+  bottom: 25.83%;
+  left: 42.96%;
+}
+.ellipseDiv {
+  position: absolute;
+  top: 494px;
+  left: 778px;
+  border-radius: 50%;
+  background-color: #7df2a2;
+  width: 349px;
+  height: 318px;
+  opacity: 0.4;
+  mix-blend-mode: normal;
+}
+.alreadyRegister,
+.clickHere {
+  position: absolute;
+  top: 574px;
+  left: 780px;
+  font-size: 24px;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 349px;
+  height: 29px;
+}
+.clickHere {
+  top: 588px;
+  left: 823px;
+  color: #675885;
+  width: 271px;
+  height: 50px;
+}
+.frameChild1 {
+  position: absolute;
+  top: 659px;
+  left: 814px;
+  border-radius: 50px;
+  width: 286px;
+  height: 71px;
+  object-fit: cover;
+  mix-blend-mode: color-burn;
+}
+.logIn {
+  position: absolute;
+  top: 670px;
+  left: 867px;
+  font-size: 38px;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  display: inline-block;
+  width: 189px;
+  height: 49px;
+  cursor: pointer;
+}
+.addressBook {
+  position: absolute;
+  top: 322.9px;
+  left: 423.6px;
+  background-color: transparent;
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+}
+.vectorIcon3 {
+  height: 4.68%;
+  width: 5.49%;
+  top: 28.33%;
+  right: 81.05%;
+  bottom: 67%;
+  left: 13.46%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.frame,
+.frame1,
+.vectorIcon3,
+.vectorIcon4 {
+  position: absolute;
+  overflow: hidden;
+}
+.vectorIcon4 {
+  height: 4.68%;
+  width: 5.49%;
+  top: 44.46%;
+  right: 81.05%;
+  bottom: 50.86%;
+  left: 13.46%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.frame,
+.frame1 {
+  top: 0;
+  left: 214px;
+  width: 1129px;
+  height: 812px;
+}
+.frame {
+  top: 135px;
+  left: 138px;
+  width: 1343px;
+  font-size: 40px;
+  color: #171fd3;
+}
+.macbookPro142 {
+  position: relative;
+  background-color: #cefadc;
+  width: 100%;
+  height: 982px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 48px;
+  color: #fff;
+  font-family: Inter;
+}
