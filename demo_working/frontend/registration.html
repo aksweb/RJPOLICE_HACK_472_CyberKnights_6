@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/registration.css">
+    <title>Camera Registration Form</title>
+</head>
+
+<body>
+    <div id="registration-container">
+        <h2>Camera Registration</h2>
+        <div id="reg"> 
+            <form id="registration-form" onsubmit="registerCamera(event)">
+                
+                <label for="model">Model:</label>
+                <input type="text" id="model" required>
+                
+                <label for="resolution">Resolution:</label>
+                <input type="text" id="resolution" required>
+                
+                <label for="recordingCapabilities">Recording Capabilities:</label>
+                <input type="text" id="recordingCapabilities" required>
+                
+                <label for="ownerName">Owner Name:</label>
+                <input type="text" id="ownerName" required>
+                
+                <label for="ownerEmail">Owner Email:</label>
+                <input type="email" id="ownerEmail" required>
+                
+                <label for="ownerPhone">Owner Phone:</label>
+                <input type="tel" id="ownerPhone" required>
+                <label for="visibilityRange">Visibility Range:</label>
+                <input type="number" id="visibilityRange" required>
+                <label for="locationPicker">Select Location:</label>
+                <div id="locationPicker"></div>
+                
+                <!-- Hidden inputs to store selected latitude and longitude -->
+                <input id="lat" name="lat" required>
+                <input id="lng" name="lng" required>
+                
+                
+                <button type="submit">Register Camera</button>
+            </form>
+            <h1>Team CyberKnights</h1>
+            <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtgpJc-aZE3yL9pC82NE4MefQHHkdbfM8&libraries=places&callback=initMap"
+            async defer></script>
+            <script src="js/location-picker.js"></script>
+            <script src="js/registration.js"></script>
+        </div>
+        </div>
+    </body>
+    
+</html>

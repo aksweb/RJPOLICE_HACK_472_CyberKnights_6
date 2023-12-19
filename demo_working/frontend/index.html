@@ -1,0 +1,37 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Camera Registration System</title>
+</head>
+
+<body>
+    <div id="map-container">
+        <div id="map"></div>
+    </div>
+    <div id="alerts-container">
+        <div id="alerts">
+            <h1>CyberKnights Demo</h1>
+            <!-- Use an anchor tag to create a link to the registration page -->
+            <a href="./registration.html"><button>Registration Page</button></a>
+            <h2>Alerts will be displayed here</h2>
+            <div id="video-frame-box">
+                <!-- Video frame box content goes here -->
+                <video controls width="100%">
+                    <!-- Add video source here -->
+                    <source src="your_video_source.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtgpJc-aZE3yL9pC82NE4MefQHHkdbfM8&callback=initMap"
+        async defer></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
