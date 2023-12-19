@@ -1,5 +1,9 @@
 # RJPOLICE_HACK_472_CyberKnights_6
+## Front-end Screenshot
+![Control Dashboard](https://github.com/aksweb/RJPOLICE_HACK_472_CyberKnights_6/blob/main/ongoing_frontend/screenshots/1.png)
+![Registration](https://github.com/aksweb/RJPOLICE_HACK_472_CyberKnights_6/blob/main/ongoing_frontend/screenshots/2.png)
 
+## Demo Screenshots
 # HOW TO ACCESS DEMO
 # Camera Registration System
 
