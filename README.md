@@ -4,6 +4,8 @@
 ![Registration](https://github.com/aksweb/RJPOLICE_HACK_472_CyberKnights_6/blob/main/ongoing_frontend/screenshots/2.png)
 
 ## Demo Screenshots
+![Registration](https://github.com/aksweb/RJPOLICE_HACK_472_CyberKnights_6/blob/main/demo_working/screenshots/Screenshot%20(1697).png)
+![Registration](https://github.com/aksweb/RJPOLICE_HACK_472_CyberKnights_6/blob/main/demo_working/screenshots/Screenshot%20(1699).png)
 # HOW TO ACCESS DEMO
 # Camera Registration System
 
