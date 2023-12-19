@@ -60,6 +60,9 @@ Before running the application locally, make sure you have the following install
 
     - Open your browser and go to [http://localhost:3000](http://localhost:3000).
 
+# ML Models:
+
+
 ## Additional Notes
 
 - The application uses the MERN stack, with React for the frontend, Express.js for the backend, and MongoDB for data storage.
