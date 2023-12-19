@@ -41,14 +41,14 @@ Before running the application locally, make sure you have the following install
     ```bash
     # Start the server (from the 'backend' directory)
     cd backend
-    npm start
+    node src/app.js
 
     # Start the client (from the 'frontend' directory)
     cd ../frontend
-    npm start
+    start index.html
     ```
 
-5. **Access the Application:**
+5. **In case it doesn't opened:**
 
     - Open your browser and go to [http://localhost:3000](http://localhost:3000).
 
