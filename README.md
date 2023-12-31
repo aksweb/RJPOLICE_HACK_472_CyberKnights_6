@@ -1,6 +1,8 @@
 # RJPOLICE_HACK_472_CyberKnights_6
 ## Front-end Screenshot
 ![Control Dashboard](https://github.com/aksweb/RJPOLICE_HACK_472_CyberKnights_6/blob/main/ongoing_frontend/screenshots/1.png)
+![ALERT](https://github.com/aksweb/RJPOLICE_HACK_472_CyberKnights_6/blob/main/ongoing_frontend/screenshots/alert.png)
+![ANPR](https://github.com/aksweb/RJPOLICE_HACK_472_CyberKnights_6/blob/main/ongoing_frontend/screenshots/anpr.png)
 ![Registration](https://github.com/aksweb/RJPOLICE_HACK_472_CyberKnights_6/blob/main/ongoing_frontend/screenshots/2.png)
 
 ## Demo Screenshots
