@@ -97,6 +97,7 @@ YOLOv4 is a state-of-the-art object detection model, to detect and identify inst
 - **Object Detection:** Utilizes YOLOv5 for real-time detection of various objects and events in a given scene.
 - **Face Detection:** Using YOLOv5 for real-time face detection in a given scene.
 - ![Face Detection Video](ml/face.mp4)
+-  ![Face Detection Video](ml/face1.gif)
 - **Incident Identification:** Focuses on identifying and highlighting instances of violence, riots, crimes, and accidents.
 - **Real-Time Processing:** Optimized for processing video streams in real-time.
 - **Visual Alerts:** Provides visual alerts or annotations for detected incidents.
