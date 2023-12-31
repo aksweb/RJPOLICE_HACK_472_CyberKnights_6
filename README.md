@@ -1,4 +1,6 @@
 # RJPOLICE_HACK_472_CyberKnights_6
+## Flow
+![Control Dashboard](https://github.com/aksweb/RJPOLICE_HACK_472_CyberKnights_6/blob/main/ml/flow.png)
 ## Front-end Screenshot
 ![Control Dashboard](https://github.com/aksweb/RJPOLICE_HACK_472_CyberKnights_6/blob/main/ongoing_frontend/screenshots/1.png)
 ![Control Dashboard](https://github.com/aksweb/RJPOLICE_HACK_472_CyberKnights_6/blob/main/ongoing_frontend/screenshots/mapalert.png)
@@ -21,6 +23,8 @@
 - **Visual Alerts:** Provides visual alerts or annotations for detected incidents.
 
 # ML Models:
+## Architecture
+![Control Dashboard](https://github.com/aksweb/RJPOLICE_HACK_472_CyberKnights_6/blob/main/ml/modelarc.png)
 ## Implement image processing algorithms:
 
 ### 1. Vehicle Detection with Number Plate Recognition using YOLOv5:
