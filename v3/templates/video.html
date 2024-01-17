@@ -1,0 +1,32 @@
+<!-- video.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Camera Registration System</title>
+</head>
+
+<body>
+    <img src="{{ url_for('video_feed') }}">
+
+    <div>
+        <h2>Detected Classes:</h2>
+        <ul>
+            {% for detected_class in classes %}
+            <li>{{ detected_class }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <!-- Google Maps API script -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtgpJc-aZE3yL9pC82NE4MefQHHkdbfM8&callback=initMap"
+        async defer></script>
+
+    <!-- Your custom JavaScript file -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>

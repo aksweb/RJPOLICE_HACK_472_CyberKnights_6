@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/trackcell1.css') }}">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Post No Bills Colombo ExtraBold:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@800&display=swap"
+    />
+    <link rel="icon" href=
+    "../static/img/hacker.gif"
+              type="gif/x-icon">
+  </head>
+  <body>
+    <nav class="bg"></nav>
+
+      <div class="orig-1-wrapper">
+        <img id="vehicle-img" class="orig-1-icon" alt="" src="" />
+      </div>
+
+
+    
+      
+        <div class="logo">
+          <img class="group-icon" alt="" src="../static/img/hacker.gif"/>
+        </div>
+      
+
+      
+        <div class="top-menu">
+          <input  class="image-mask-icon10" id="checkbox" type="checkbox" />
+          <label class="switch" for="checkbox">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="slider">
+              <path
+                d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V256c0 17.7 14.3 32 32 32s32-14.3 32-32V32zM143.5 120.6c13.6-11.3 15.4-31.5 4.1-45.1s-31.5-15.4-45.1-4.1C49.7 115.4 16 181.8 16 256c0 132.5 107.5 240 240 240s240-107.5 240-240c0-74.2-33.8-140.6-86.6-184.6c-13.6-11.3-33.8-9.4-45.1 4.1s-9.4 33.8 4.1 45.1c38.9 32.3 63.5 81 63.5 135.4c0 97.2-78.8 176-176 176s-176-78.8-176-176c0-54.4 24.7-103.1 63.5-135.4z"
+              ></path>
+            </svg>
+          </label>
+        </div>
+
+
+
+    
+       
+          <div class="chat">
+            <p class="cyber">CYBER</p>
+            <p class="cyber">KNIGHTS</p>
+          </div>
+        
+
+
+      <div class="exact-match-parent">
+        <div class="exact-match">Exact match</div>
+        <div id="number-plate" class="orig-2-wrapper">
+          
+        </div>
+        <div class="rear-camera">Rear Camera</div>
+      </div>
+
+      
+      
+        <div class="frame-child15">
+          <b class="capias-warrent-alert">Vehicle on Alert</b>
+        </div>
+        
+
+
+      <div class="macbook-pro-16-1-child">
+        <div id="details" class="macbook-pro-16-1-item">
+
+
+        </div>
+      </div>
+
+
+      
+    
+
+<div>
+  <button id="ba">Back</button>
+  <button id="ma">Map</button>
+</div>
+     
+      
+      
+   
+
+    <script>
+
+      document.addEventListener("DOMContentLoaded", function () {
+          // Get tracked_vehicle from localStorage
+          const trackedVehicle = JSON.parse(localStorage.getItem('tracked_vehicle'));
+
+          if (trackedVehicle) {
+            // Populate divs with data
+            const numberPlateDiv = document.getElementById('number-plate');
+            // const alertMsgDiv = document.getElementById('alert-msg');
+            const detailsDiv = document.getElementById('details');
+            const vehicleImg = document.getElementById('vehicle-img');
+
+            numberPlateDiv.textContent = trackedVehicle.vehicle_number;
+            // alertMsgDiv.textContent = trackedVehicle.alert;
+
+            // Get initial and final coordinates
+            const initialCoordinates = trackedVehicle.coordinates_data[0].coordinates;
+            const finalCoordinates = trackedVehicle.coordinates_data[trackedVehicle.coordinates_data.length - 1].coordinates;
+
+            // Populate detailsDiv with initial and final coordinates
+            detailsDiv.innerHTML = `
+            <p><strong>Initial Coordinates:</strong> Latitude: ${initialCoordinates.latitude}, Longitude: ${initialCoordinates.longitude}</p>
+            <p><strong>Final Coordinates:</strong> Latitude: ${finalCoordinates.latitude}, Longitude: ${finalCoordinates.longitude}</p>
+        `;
+
+            // Set the image source
+            vehicleImg.src = trackedVehicle.image_url;
+            vehicleImg.alt = trackedVehicle.vehicle_number;
+
+            
+          } else {
+            // Handle the case where tracked_vehicle is not found in localStorage
+            alert('Tracked vehicle data not found!');
+            // You may want to redirect the user to another page or take appropriate action
+          }
+
+          
+        });
+
+
+      var bACKText = document.getElementById("ba");
+      if (bACKText) {
+        bACKText.addEventListener("click", function (e) {
+          window.location.href = "{{url_for('trackcell')}}";
+        });
+      }
+
+      var rectangle5 = document.getElementById("ma");
+      if (rectangle5) {
+        rectangle5.addEventListener("click", function (e) {
+              const trackedVehicle = JSON.parse(localStorage.getItem('tracked_vehicle'));
+                        localStorage.setItem('route_coordinates', JSON.stringify(trackedVehicle.coordinates_data));
+          window.location.href = '/trackcell2';
+
+          // window.location.href = "{{url_for('adminaudiocall')}}";
+        });
+      }
+
+      var rectangle6 = document.getElementById("checkbox");
+      if (rectangle6) {
+        rectangle6.addEventListener("click", function (e) {
+          window.location.href = "{{url_for('policelogin')}}";
+        });
+      }
+      </script>
+  </body>
+</html>

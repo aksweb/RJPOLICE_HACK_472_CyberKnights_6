@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/registration.css') }}">
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- <link rel="stylesheet" href="css/registration.css"> -->
+    <title>Camera Registration Form</title>
+    <link rel="icon" href=
+"../static/img/hacker.gif"
+          type="gif/x-icon">
+
+</head>
+
+<body>
+    <div id="registration-container">
+        <h2>Camera Registration</h2>
+        <div id="reg"> 
+            <!-- ------------------------------------------------------ -->
+            <!-- Add a button/link to trigger the popup -->
+            <a class="la" href="#" onclick="showKnowYourCamera()">Know Your Camera</a>
+            
+            <!-- Know Your Camera Popup -->
+            <div id="knowYourCameraPopup">
+                <div id="knowYourCameraClose" onclick="hideKnowYourCamera()">X</div>
+                <h3>Dome Cameras:</h3>
+                <ul>
+                    <li>Widely used indoors</li>
+                    <li>Dome-shaped housing</li>
+                    <li>Wide field of view</li>
+                    <li>Vandal-resistant options</li>
+                    <li>Infrared capabilities</li>
+                    <li>PTZ functionality</li>
+                </ul>
+            
+                <h3>Bullet Cameras:</h3>
+                <ul>
+                    <li>Cylindrical shape</li>
+                    <li>Suitable for indoor and outdoor use</li>
+                    <li>Weatherproof</li>
+                    <li>Long-range viewing</li>
+                    <li>Visible deterrent</li>
+                    <li>Infrared LEDs for night vision</li>
+                </ul>
+            
+                <h3>PTZ Cameras (Pan-Tilt-Zoom):</h3>
+                <ul>
+                    <li>Remote control of pan, tilt, and zoom</li>
+                    <li>Flexible tracking and monitoring</li>
+                    <li>Suitable for large open areas</li>
+                </ul>
+            
+                <h3>IP Cameras (Internet Protocol):</h3>
+                <ul>
+                    <li>Transmits video over an internet network</li>
+                    <li>Remote access and monitoring</li>
+                    <li>High-resolution video</li>
+                    <li>Motion detection, audio, and analytics features</li>
+                </ul>
+            
+                <h3>Wireless Cameras:</h3>
+                <ul>
+                    <li>No physical cables</li>
+                    <li>Wi-Fi transmission</li>
+                    <li>Battery-powered or wired options</li>
+                </ul>
+            
+                <h3>360-Degree Cameras:</h3>
+                <ul>
+                    <li>Captures a 360-degree field of view</li>
+                    <li>Eliminates blind spots</li>
+                    <li>Allows dewarping to focus on specific areas</li>
+                </ul>
+            
+                <h3>Covert Cameras:</h3>
+                <ul>
+                    <li>Discreet and hidden</li>
+                    <li>Disguised as everyday objects</li>
+                    <li>Used for undercover or discreet surveillance</li>
+                </ul>
+            
+                <h3>Thermal Cameras:</h3>
+                <ul>
+                    <li>Detects infrared radiation</li>
+                    <li>Creates images based on temperature differences</li>
+                    <li>Works well in low-light conditions</li>
+                </ul>
+            
+                <h3>ANPR Cameras (Automatic Number Plate Recognition):</h3>
+                <ul>
+                    <li>Captures and recognizes license plate numbers</li>
+                    <li>Used for traffic monitoring and security</li>
+                </ul>
+            
+                <h3>Fisheye Cameras:</h3>
+                <ul>
+                    <li>Extremely wide-angle view</li>
+                    <li>Covers 360 degrees</li>
+                    <li>Useful for surveillance in open spaces</li>
+                </ul>
+            
+                <!-- Repeat similar structure for other camera types -->
+            </div>
+            <!-- ------------------------------------------------------ -->
+            <form class="ff" id="update-form" onsubmit="updateCameraDetails(event)">
+                
+                <label class="la" for="ownerName">Owner Name:</label>
+                <input class="input-style" type="text" id="ownerName" required>
+                <br>
+                <label class="la" for="aadhar">Aadhar Number:</label>
+                <input class="input-style" type="text" id="aadhar" required>
+                <br>
+                <label class="la" for="ownerEmail">Owner Email:</label>
+                <input class="input-style" type="email" id="ownerEmail" required>
+                <br>
+                <label class="la" for="ownerPhone">Owner Phone:</label>
+                <input class="input-style" type="text" id="ownerPhone" required>
+                <br>
+                <label class="la" for="model">Model:</label>
+                <input class="input-style" type="text" id="model" required>
+                <br>
+                <label class="la" for="ip">IP Address:</label>
+                <input class="input-style" type="text" id="ip" required>
+                <br>
+                <label class="la" for="resolution">Resolution (in pixels):</label>
+                <input class="input-style" type="text" id="resolution" required>
+                <br>
+                <label class="la" for="recordingCapabilities">Recording Capabilities (See from know your camera):</label>
+                <input class="input-style" type="text" id="recordingCapabilities" required>
+                <br>
+                <label class="la" for="visibilityRange">Visibility Range (In Meters):</label>
+                <input class="input-style" type="number" id="visibilityRange" required>
+                <br>
+
+                <label class="la" for="locationPicker">Select Location:</label>
+                <div id="locationPicker"></div>
+                
+                <!-- Hidden inputs to store selected latitude and longitude -->
+                <input class="input-style" id="lat" name="lat" required>
+                <input class="input-style" id="lng" name="lng" required>
+                
+                <br>
+                <button class="button1" type="submit">Register Camera</button>
+                <button class="button1" id="rectangle1">Log out</button>
+            </form>
+
+            
+
+        
+            <script src="{{ url_for('static', filename='js/location-picker.js') }}"></script>
+            <script src="{{ url_for('static', filename='js/updateCameraDetails.js') }}"></script>
+            <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtgpJc-aZE3yL9pC82NE4MefQHHkdbfM8&libraries=places&callback=initMap"
+            async defer></script>
+
+            <script>
+                var rectangle1 = document.getElementById("rectangle1");
+                if (rectangle1) {
+                    rectangle1.addEventListener("click", function (e) {
+                        console.log("from back: ", localStorage.getItem('userPhone'));
+                        localStorage.removeItem('userPhone');
+                        console.log("from back: ", localStorage.getItem('userPhone'));
+
+                        window.location.href = "{{url_for('user_login')}}";
+                    });
+                }
+            </script>
+
+            <!-- <script src="js/location-picker.js"></script>
+            <script src="js/registration.js"></script> -->
+        </div>
+        </div>
+    </body>
+    
+</html>

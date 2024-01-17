@@ -1,0 +1,188 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Locations</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th,
+      td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      #map {
+        height: 400px;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+  
+    <div id="map"></div>
+  
+    <label for="locationInput">Select Location:</label>
+    <input type="text" id="locationInput" placeholder="Enter location">
+  
+    <button onclick="filterCameras()">Filter Cameras</button>
+    <button onclick="viewNearby()">View Nearby</button>
+
+  
+    <table>
+      <thead>
+        <tr>
+          <th>Owner Name</th>
+          <th>Owner Phone</th>
+          <th>Aadhar</th>
+          <th>IP</th>
+          <th>Latitude</th>
+          <th>Longitude</th>
+          <th>Model</th>
+          <th>Recording Capabilities</th>
+          <th>Resolution</th>
+          <th>Visibility Range</th>
+          <th>Location Name</th>
+        </tr>
+      </thead>
+      <tbody id="cameraTableBody"></tbody>
+    </table>
+  
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtgpJc-aZE3yL9pC82NE4MefQHHkdbfM8&libraries=places,geometry"></script>
+<script>
+      let map;
+      let markers = [];
+      let originalData; // Store the original data for resetting the table
+
+      document.addEventListener("DOMContentLoaded", function () {
+        initMap();
+        fetchDataAndDisplay();
+      });
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: { lat: 28.6139, lng: 77.2090 }, // Default center (Delhi)
+          zoom: 10
+        });
+
+        const input = document.getElementById('locationInput');
+        const autocomplete = new google.maps.places.Autocomplete(input);
+
+        autocomplete.addListener('place_changed', function () {
+          const place = autocomplete.getPlace();
+          map.setCenter(place.geometry.location);
+        });
+      }
+
+      function fetchDataAndDisplay() {
+        fetch('http://localhost:3000/api/cameras/locations')
+          .then(response => response.json())
+          .then(data => {
+            originalData = data; // Store the original data
+            displayCameraDetails(data);
+          })
+          .catch(error => console.error('Error fetching camera details:', error));
+      }
+
+      function displayCameraDetails(data) {
+        const tableBody = document.getElementById('cameraTableBody');
+        tableBody.innerHTML = ''; // Clear existing table content
+
+        data.forEach(camera => {
+          const row = document.createElement('tr');
+          row.innerHTML = `
+                      <td>${camera.ownerName || 'Unknown'}</td>
+                      <td>${camera.ownerPhone || 'Unknown'}</td>
+                      <td>${camera.aadhar || 'Unknown'}</td>
+                      <td>${camera.ip || 'Unknown'}</td>
+                      <td>${camera.lat || 'Unknown'}</td>
+                      <td>${camera.lng || 'Unknown'}</td>
+                      <td>${camera.model || 'Unknown'}</td>
+                      <td>${camera.recordingCapabilities || 'Unknown'}</td>
+                      <td>${camera.resolution || 'Unknown'}</td>
+                      <td>${camera.visibilityRange || 'Unknown'}</td>
+                      <td>${camera.locationName || 'Unknown'}</td>
+                  `;
+          tableBody.appendChild(row);
+
+          const marker = new google.maps.Marker({
+            position: { lat: parseFloat(camera.lat), lng: parseFloat(camera.lng) },
+            map: map,
+            title: camera.locationName || 'Unknown'
+          });
+
+          markers.push(marker);
+        });
+      }
+
+      function filterCameras() {
+        const selectedLocation = document.getElementById('locationInput').value;
+
+        if (!selectedLocation) {
+          alert('Please select a location.');
+          return;
+        }
+
+        const geocoder = new google.maps.Geocoder();
+        geocoder.geocode({ address: selectedLocation }, function (results, status) {
+          if (status === 'OK') {
+            const selectedLatLng = results[0].geometry.location;
+            const filteredData = originalData.filter(camera => {
+              const cameraLatLng = new google.maps.LatLng(camera.lat, camera.lng);
+              const distance = google.maps.geometry.spherical.computeDistanceBetween(selectedLatLng, cameraLatLng);
+              return distance < 50000; // Adjust the distance threshold as needed (in meters)
+              
+            });
+            localStorage.setItem('selectedCoordinates', JSON.stringify(filteredData));
+            console.log("filtered data saved :  ", localStorage.getItem('selectedCoordinates'));
+
+            //  // Save selected coordinates to local storage
+            // const coordinates = {
+            //   lat: selectedLatLng.lat(),
+            //   lng: selectedLatLng.lng()
+            // };
+
+
+            // Update the table with filtered data
+            displayCameraDetails(filteredData);
+
+            // Clear existing markers
+            markers.forEach(marker => marker.setMap(null));
+
+            // Display only filtered markers
+            filteredData.forEach(camera => {
+              const marker = new google.maps.Marker({
+                position: { lat: parseFloat(camera.lat), lng: parseFloat(camera.lng) },
+                map: map,
+                title: camera.locationName || 'Unknown'
+              });
+
+              markers.push(marker);
+            });
+          } else {
+            alert('Geocode was not successful for the following reason: ' + status);
+          }
+        });
+      }
+    
+      function viewNearby() {
+            window.location.href = " {{url_for('cameracell1')}}";
+        }
+    </script>
+  
+  </body>
+  
+  </html>
