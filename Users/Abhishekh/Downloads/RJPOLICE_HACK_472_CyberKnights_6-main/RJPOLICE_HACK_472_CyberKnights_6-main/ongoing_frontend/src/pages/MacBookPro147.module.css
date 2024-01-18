@@ -1,0 +1,103 @@
+.d1Icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 866px;
+  height: 982px;
+  object-fit: cover;
+}
+.macbookPro147Child {
+  position: absolute;
+  top: 129px;
+  left: 914px;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.65);
+  width: 542px;
+  height: 81px;
+  cursor: pointer;
+}
+.macbookPro147Child1,
+.macbookPro147Inner,
+.macbookPro147Item,
+.rectangleDiv {
+  position: absolute;
+  top: 260px;
+  left: 914px;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.25);
+  width: 542px;
+  height: 81px;
+}
+.macbookPro147Child1,
+.macbookPro147Inner,
+.rectangleDiv {
+  top: 391px;
+}
+.macbookPro147Child1,
+.rectangleDiv {
+  top: 522px;
+}
+.macbookPro147Child1 {
+  top: 653px;
+}
+.faceMatch,
+.luggageDetect,
+.vehiclesWithNumber {
+  position: absolute;
+  left: 937px;
+  letter-spacing: 0.18em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 488px;
+  height: 81px;
+}
+.faceMatch {
+  top: 129px;
+  cursor: pointer;
+}
+.luggageDetect,
+.vehiclesWithNumber {
+  top: 260px;
+}
+.vehiclesWithNumber {
+  top: 391px;
+  font-size: 36px;
+}
+.movingStanding {
+  margin: 0;
+}
+.movingStandingContainer1 {
+  width: 100%;
+}
+.animalDetect,
+.movingStandingContainer {
+  position: absolute;
+  letter-spacing: 0.18em;
+  display: flex;
+  align-items: center;
+  width: 488px;
+}
+.movingStandingContainer {
+  top: 556px;
+  left: 941px;
+  font-size: 30px;
+  height: 57px;
+}
+.animalDetect {
+  top: 653px;
+  left: 937px;
+  justify-content: center;
+  height: 81px;
+}
+.macbookPro147 {
+  position: relative;
+  background-color: #cefadc;
+  width: 100%;
+  height: 982px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 48px;
+  color: #f9f0f0;
+  font-family: Inter;
+}

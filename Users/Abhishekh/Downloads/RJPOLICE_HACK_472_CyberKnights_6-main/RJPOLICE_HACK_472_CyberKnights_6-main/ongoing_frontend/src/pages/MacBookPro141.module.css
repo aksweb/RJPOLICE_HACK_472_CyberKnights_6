@@ -1,0 +1,268 @@
+.macbookPro141Child {
+  position: absolute;
+  top: 143px;
+  left: 349px;
+  border-radius: 50%;
+  background-color: #7df2a2;
+  width: 815px;
+  height: 756px;
+  opacity: 0.4;
+  mix-blend-mode: normal;
+}
+.macbookPro141Inner,
+.macbookPro141Item {
+  position: absolute;
+  top: 539.5px;
+  left: 450.5px;
+  border-radius: 50px;
+  background-color: #f9f0f0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  width: 612px;
+  height: 72px;
+  mix-blend-mode: linear-dodge;
+}
+.macbookPro141Inner {
+  top: 416.5px;
+  left: 447.5px;
+}
+.vectorIcon {
+  position: absolute;
+  height: 3.87%;
+  width: 4.1%;
+  top: 56.72%;
+  right: 61.04%;
+  bottom: 39.41%;
+  left: 34.85%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.password {
+  position: absolute;
+  top: 556px;
+  left: 604px;
+  letter-spacing: 0.18em;
+  display: inline-block;
+  font-weight: 500;
+  width: 346px;
+  height: 54px;
+}
+.logIn {
+  top: 681px;
+  left: 662px;
+  color: #171fd3;
+  width: 189px;
+  height: 49px;
+}
+.forUserLog,
+.forgetPassword,
+.logIn,
+.register {
+  position: absolute;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  display: inline-block;
+}
+.register {
+  top: 826px;
+  left: 1215px;
+  font-size: 29px;
+  color: #171fd3;
+  width: 189px;
+  height: 49px;
+}
+.forUserLog,
+.forgetPassword {
+  top: 630px;
+  left: 433px;
+  font-size: 15px;
+  width: 313px;
+  height: 31px;
+}
+.forUserLog {
+  top: 309px;
+  left: 451px;
+  font-size: 48px;
+  color: #675885;
+  width: 568px;
+  height: 126px;
+}
+.lock {
+  position: absolute;
+  top: 557.5px;
+  left: 752.6px;
+  background-color: transparent;
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+}
+.vectorIcon1,
+.vectorIcon2,
+.vectorIcon3 {
+  position: absolute;
+  height: 2.23%;
+  width: 1.29%;
+  top: 79.43%;
+  right: 55.85%;
+  bottom: 18.34%;
+  left: 42.86%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.vectorIcon2,
+.vectorIcon3 {
+  height: 2.45%;
+  width: 1.6%;
+  right: 49.39%;
+  bottom: 18.12%;
+  left: 49.01%;
+}
+.vectorIcon3 {
+  height: 2.07%;
+  width: 1.65%;
+  right: 42.86%;
+  bottom: 18.5%;
+  left: 55.49%;
+}
+.frameChild {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 618.5px);
+  border-radius: 50px;
+  background-color: rgba(23, 31, 211, 0.35);
+  width: 609px;
+  height: 76px;
+}
+.forPolice,
+.forUser {
+  position: absolute;
+  top: 11px;
+  left: 107px;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  display: inline-block;
+  width: 394px;
+  height: 54px;
+}
+.forPolice {
+  left: 704px;
+  color: #000;
+  width: 480px;
+  height: 58px;
+}
+.rectangleParent {
+  position: absolute;
+  top: 48px;
+  left: 147px;
+  border-radius: 50px;
+  background-color: rgba(11, 218, 81, 0.74);
+  width: 1237px;
+  height: 76px;
+  cursor: pointer;
+  font-size: 48px;
+  color: #fff;
+}
+.gofore {
+  position: absolute;
+  top: 493.8px;
+  left: 752.6px;
+  background-color: transparent;
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+}
+.clickHere,
+.newUser {
+  position: absolute;
+  top: 697px;
+  left: 1215px;
+  font-size: 24px;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  color: #171fd3;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 181px;
+  height: 18px;
+}
+.clickHere {
+  top: 720px;
+  left: 1171px;
+  color: #675885;
+  width: 271px;
+  height: 50px;
+}
+.rectangleIcon {
+  position: absolute;
+  top: 670px;
+  left: 613px;
+  border-radius: 50px;
+  width: 286px;
+  height: 71px;
+  object-fit: cover;
+  mix-blend-mode: color-burn;
+  cursor: pointer;
+}
+.ellipseDiv {
+  position: absolute;
+  top: 633px;
+  left: 1131px;
+  border-radius: 50%;
+  background-color: #7df2a2;
+  width: 349px;
+  height: 318px;
+  opacity: 0.4;
+  mix-blend-mode: normal;
+}
+.macbookPro141Child1 {
+  position: absolute;
+  top: 804px;
+  left: 1164px;
+  border-radius: 50px;
+  width: 286px;
+  height: 71px;
+  object-fit: cover;
+  mix-blend-mode: color-burn;
+  cursor: pointer;
+}
+.vectorIcon4 {
+  position: absolute;
+  height: 3.87%;
+  width: 4.1%;
+  top: 44.3%;
+  right: 61.04%;
+  bottom: 51.83%;
+  left: 34.85%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.username {
+  position: absolute;
+  top: 431px;
+  left: 639px;
+  letter-spacing: 0.18em;
+  display: inline-block;
+  font-weight: 500;
+  width: 276px;
+  height: 42px;
+}
+.macbookPro141 {
+  position: relative;
+  background-color: #cefadc;
+  backdrop-filter: blur(5px);
+  width: 100%;
+  height: 982px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 40px;
+  color: #000;
+  font-family: Inter;
+}

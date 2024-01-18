@@ -1,0 +1,33 @@
+###
+GET http://localhost:3000/api/cameras/locations
+
+###
+POST http://localhost:3000/api/cameras/register
+Content-Type: application/json
+
+{
+    "model": "d",
+    "resolution": "s",
+    "recordingCapabilities": "s",
+    "ownerName": "d",
+    "ownerEmail": "g@g",
+    "ownerPhone": "3222222222",
+    "visibilityRange": 3,
+    "lat": 77.1993794,
+    "lng": 28.7369366,
+}
+###
+POST http://localhost:3000/api/cameras/register
+Content-Type: application/json
+
+{
+    "model": "TestModel",
+    "resolution": "1080p",
+    "recordingCapabilities": "Motion detection",
+    "ownerName": "Test Owner",
+    "ownerEmail": "testowner@example.com",
+    "ownerPhone": "1234567890",
+    "visibilityRange": 50,
+    "lat": 28.7369385,
+    "lng": 77.1993751
+}

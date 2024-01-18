@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/admin-audio-call.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/fetchLoc.js')}}"></script>
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Post No Bills Colombo ExtraBold:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@800&display=swap" />
+    <link rel="icon" href="../static/img/hacker.gif" type="gif/x-icon">
+
+</head>
+
+<body>
+    <!-- <div class="admin-audio-call"> -->
+    <nav class="bg9"></nav>
+    <div class="admin-audio-call-child"></div>
+
+    <div class="logo9">
+        <img class="group-icon9" alt="" src="../static/img/hacker.gif" />
+    </div>
+
+
+    <div class="ii">
+        <a href="{{url_for('adminaudiocall')}}">
+            <img id="home" class="side-menu-icon3" alt="" src="../static/img/home.png" />
+        </a>
+        <a href="{{url_for('searchcell1')}}">
+            <img id="search" class="side-menu-icon1" alt="" src="../static/img/search.png" />
+        </a>
+
+        <a href="{{url_for('trackcell')}}">
+            <img class="side-menu-icon2" alt="" src="../static/img/tracking.png" />
+        </a>
+        <a href="{{url_for('ownercell1')}}">
+            <img id="man" class="side-menu-icon4" alt="" src="../static/img/man-in-suit-and-tie.png" />
+
+        </a>
+    </div>
+
+
+    <div class="top-menu9">
+        <input class="image-mask-icon10" id="checkbox" type="checkbox" />
+        <label class="switch" for="checkbox">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="slider">
+                <path
+                    d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V256c0 17.7 14.3 32 32 32s32-14.3 32-32V32zM143.5 120.6c13.6-11.3 15.4-31.5 4.1-45.1s-31.5-15.4-45.1-4.1C49.7 115.4 16 181.8 16 256c0 132.5 107.5 240 240 240s240-107.5 240-240c0-74.2-33.8-140.6-86.6-184.6c-13.6-11.3-33.8-9.4-45.1 4.1s-9.4 33.8 4.1 45.1c38.9 32.3 63.5 81 63.5 135.4c0 97.2-78.8 176-176 176s-176-78.8-176-176c0-54.4 24.7-103.1 63.5-135.4z">
+                </path>
+            </svg>
+        </label>
+    </div>
+
+
+
+    <div class="chat9">
+        <p class="cyber9">CYBER</p>
+        <p class="cyber9">KNIGHTS</p>
+    </div>
+
+
+
+
+    <div class="frame-parent2">
+
+        <div class="chat-list3">
+
+            <!-- search -->
+            <div class="search-container">
+
+                <label for="locSearch">Search Location:</label>
+                <!-- <div class="search-contact8">Search Location</div> -->
+                <input type="text" id="locSearch">
+                <button id="searchButton">Find location</button>
+            </div>
+            <!-- search ends here -->
+            <div id="cameraLocations">
+                <form action="/cameracelll" method="get">
+                    <button type="submit">View Video</button>
+                </form>
+            </div>
+
+
+
+        </div>
+
+
+        <div id="map-container">
+            <div id="map"></div>
+        </div>
+
+
+
+
+        <!-- Google Maps API script -->
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtgpJc-aZE3yL9pC82NE4MefQHHkdbfM8&callback=initMap"
+            async defer></script>
+        <script>
+
+           document.addEventListener("DOMContentLoaded", function () {
+                // Get route coordinates from localStorage
+                const routeCoordinates = JSON.parse(localStorage.getItem('route_coordinates'));
+
+                // Function to draw route on the map with markers
+                function drawRouteOnMap(coordinates) {
+                    const map = new google.maps.Map(document.getElementById('map-container'), {
+                        center: { lat: coordinates[0].coordinates.latitude, lng: coordinates[0].coordinates.longitude },
+                        zoom: 15,
+                    });
+
+                    const routeCoordinates = coordinates.map(coord => ({
+                        lat: coord.coordinates.latitude,
+                        lng: coord.coordinates.longitude,
+                    }));
+
+                    // Create a marker for each coordinate
+                    routeCoordinates.forEach((coordinate, index) => {
+                        const marker = new google.maps.Marker({
+                            position: coordinate,
+                            map: map,
+                            label: (index + 1).toString(), // Use numbers as labels
+                        });
+
+                        // Add an info window to display additional information if needed
+                        const infoWindow = new google.maps.InfoWindow({
+                            content: `<div>Timestamp: ${coordinates[index].timestamp}</div>`,
+                        });
+
+                        marker.addListener('click', () => {
+                            infoWindow.open(map, marker);
+                        });
+                    });
+
+                    // Draw polyline for the route
+                    const routePath = new google.maps.Polyline({
+                        path: routeCoordinates,
+                        geodesic: true,
+                        strokeColor: '#e44747',
+                        strokeOpacity: 1.0,
+                        strokeWeight: 3,
+                    });
+
+                    routePath.setMap(map);
+                }
+
+                // Draw the route if coordinates are available
+                if (routeCoordinates) {
+                    drawRouteOnMap(routeCoordinates);
+                } else {
+                    alert('Route coordinates not found!');
+                    // You may want to redirect the user to another page or take appropriate action
+                }
+
+                // Attach click event listener to the "Map" button
+                const mapButton = document.getElementById('ma');
+                mapButton.addEventListener('click', function () {
+                    // Get tracked_vehicle from localStorage
+                    const trackedVehicle = JSON.parse(localStorage.getItem('tracked_vehicle'));
+
+                    if (trackedVehicle) {
+                        // Store the coordinates in localStorage
+                        localStorage.setItem('route_coordinates', JSON.stringify(trackedVehicle.coordinates_data));
+
+                        // Redirect to the "/admin-audio-call" page
+                        window.location.href = '/trackcell2';
+                    } else {
+                        alert('Tracked vehicle data not found!');
+                        // You may want to redirect the user to another page or take appropriate action
+                    }
+                });
+            });
+
+            var rectangle3 = document.getElementById("checkbox");
+            if (rectangle3) {
+                rectangle3.addEventListener("click", function (e) {
+                    window.location.href = " {{url_for('policelogin')}}";
+                });
+            }
+        </script>
+</body>
+
+</html>

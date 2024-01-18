@@ -1,0 +1,499 @@
+.orig-1-icon {
+  position: absolute;
+  top: 80px;
+  left: 14px;
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+}
+.orig-1-wrapper {
+  top: 140px;
+  left: 100px;
+  background-color: var(--color-gray-100);
+  border: 2px solid var(--color-white);
+  box-sizing: border-box;
+  width: 700px;
+  height: 400px;
+}
+
+.orig-1-wrapper,
+.shape-icon {
+  position: absolute;
+}
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 70px;
+  z-index: 10;
+}
+.shape-icon {
+  top: 0;
+  left: 1.3px;
+  width: 3.2px;
+  height: 1.3px;
+}
+.group-icon,
+.logo{
+  position: fixed;
+  top: 14px;
+  left: 1px;
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+}
+.logo{
+  top: -36.5px;
+  left: 8px;
+  height: 86.2px;
+}
+.bell-icon,
+.menu {
+  top: -33px;
+  left: 8px;
+}
+.bell-icon {
+  top: 9px;
+  left: 0;
+  width: 23.3px;
+  height: 28px;
+  object-fit: cover;
+}
+.ellipse {
+  position: absolute;
+  top: 0;
+  left: 11.3px;
+  border-radius: 50%;
+  background-color: var(--color-gold);
+  width: 20px;
+  height: 20px;
+}
+.bell-parent,
+.div {
+  position: absolute;
+  top: 2px;
+  left: 19.3px;
+}
+.bell-parent {
+  top: 0;
+  left: 0;
+  width: 31.3px;
+  height: 37px;
+}
+.image-mask-icon,
+.top-menu {
+  position: absolute;
+  height: 38px;
+}
+.image-mask-icon {
+  top: 0;
+  left: 52.1px;
+  width: 38px;
+  object-fit: contain;
+}
+.top-menu {
+  position: fixed;
+  top: 15.1px;
+  left: 1450px;
+  width: 10px;
+  height: 10px;
+  z-index: 10;
+}
+.cyber {
+  margin: 0;
+}
+
+.chat {
+  position: fixed;
+  top: 10px;
+  left: 50px;
+  font-size: 20px;
+  letter-spacing: 3px;
+  line-height: 29px;
+  font-family: var(--font-post-no-bills-colombo-extrabold);
+  color: var(--color-black);
+  text-align: center;
+  z-index: 10;
+}
+
+.project {
+  top: 3.5px;
+  left: 48px;
+  font-size: var(--font-size-14xl);
+  color: var(--color-black);
+  font-family: var(--font-post-no-bills-colombo-extrabold);
+}
+.exact-match {
+  position: absolute;
+  top: 41px;
+  left: 186px;
+  font-weight: 500;
+  display: inline-block;
+  width: 312px;
+  height: 44px;
+}
+.orig-2-icon {
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  width: 302px;
+  height: 80px;
+  object-fit: cover;
+}
+.orig-2-wrapper {
+  position: absolute;
+  top: 141px;
+  left: 186px;
+  border-radius: var(--br-3xs);
+  background-color: #e44747;
+  border: 2px solid var(--color-white);
+  box-sizing: border-box;
+  width: 311px;
+  height: 92px;
+}
+.rear-camera {
+  position: absolute;
+  top: 289px;
+  left: 201px;
+  font-size: var(--font-size-17xl);
+  font-weight: 500;
+  color: var(--color-white);
+  display: inline-block;
+  width: 312px;
+  height: 44px;
+}
+.exact-match-parent,
+.frame-child15 {
+  position: absolute;
+  box-sizing: border-box;
+  background-color: var(--color-mediumslateblue-100);
+}
+.exact-match-parent {
+  top: 140px;
+  left: 813px;
+  border-radius: 15px;
+  background-color: var(--color-black);
+  border: 3px solid var(--color-white);
+  width: 600px;
+  height: 400px;
+  font-size: var(--font-size-21xl);
+  color: #ffb000;
+}
+.frame-child15 {
+  top: 65px;
+  left:590px;
+  border-radius: 34px;
+  background-color: var(--color-whitesmoke-300);
+  border: 1px solid var(--color-white);
+  width: 600px;
+  height: 80px;
+  background-color: var(--color-mediumslateblue-100);
+}
+.capias-warrent-alert {
+  position: absolute;
+  top: 16px;
+  left: 80px;
+  display: inline-block;
+  width: 806px;
+  height: 62px;
+  font-size: 40px;
+  color:#fff;
+}
+.rectangle-parent9 {
+  position: absolute;
+  top: 62px;
+  left: 613px;
+  width: 662px;
+  height: 114px;
+  background-color:  var(--color-mediumslateblue-100);
+  font-size: var(--font-size-29xl);
+  color: var(--color-black);
+}
+.macbook-pro-16-1-child {
+  position: absolute;
+  top: 540px;
+  left: 250px;
+  background-color: var(--color-black);
+  width: 1000px;
+  height: 200px;
+  border-radius: 10px;
+}
+.macbook-pro-16-1-item {
+  position: absolute;
+  top: 7px;
+  left: 100px;
+  background-color: var(--color-gainsboro);
+  width: 821px;
+  height: 190px;
+  border-radius: 10px;
+}
+.span {
+  color: var(--color-black);
+}
+.alert-type,
+.hot-list-source-container {
+  position: absolute;
+  top: 610px;
+  left: 203px;
+  font-weight: 500;
+  white-space: pre-wrap;
+  display: inline-block;
+  width: 308px;
+  height: 23px;
+}
+.hot-list-source-container {
+  top: 645px;
+  height: 22px;
+}
+.state {
+  top: 685px;
+  height: 23px;
+}
+.alarm-pri,
+.date-of-load,
+.date-of-scam,
+.madel,
+.state {
+  position: absolute;
+  left: 203px;
+  font-weight: 500;
+  display: inline-block;
+  width: 308px;
+}
+.alarm-pri {
+  top: 726px;
+  white-space: pre-wrap;
+  height: 23px;
+}
+.date-of-load,
+.date-of-scam,
+.madel {
+  height: 22px;
+}
+.madel {
+  top: 771px;
+  white-space: pre-wrap;
+}
+.date-of-load,
+.date-of-scam {
+  top: 813px;
+}
+.date-of-scam {
+  top: 856px;
+}
+.capias-warrent,
+.div1,
+.div2,
+.div3,
+.eng,
+.learn-test,
+.mazda {
+  position: absolute;
+  top: 610px;
+  left: 511px;
+  font-weight: 600;
+  color: var(--color-black);
+  display: inline-block;
+  width: 308px;
+  height: 23px;
+}
+.div1,
+.div2,
+.div3,
+.eng,
+.learn-test,
+.mazda {
+  top: 646px;
+  height: 22px;
+}
+.div1,
+.div2,
+.div3,
+.eng,
+.mazda {
+  top: 685px;
+  height: 23px;
+}
+.div1,
+.div2,
+.div3,
+.mazda {
+  top: 726px;
+}
+.div1,
+.div2,
+.div3 {
+  top: 771px;
+  height: 22px;
+}
+.div2,
+.div3 {
+  top: 813px;
+}
+.div3 {
+  top: 856px;
+}
+.line-div,
+.macbook-pro-16-1-child1,
+.macbook-pro-16-1-child2,
+.macbook-pro-16-1-child3,
+.macbook-pro-16-1-child4,
+.macbook-pro-16-1-inner {
+  position: absolute;
+  top: 642.5px;
+  left: 510.5px;
+  border-top: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 822px;
+  height: 1px;
+}
+.line-div,
+.macbook-pro-16-1-child1,
+.macbook-pro-16-1-child2,
+.macbook-pro-16-1-child3,
+.macbook-pro-16-1-child4 {
+  top: 680.5px;
+}
+.macbook-pro-16-1-child1,
+.macbook-pro-16-1-child2,
+.macbook-pro-16-1-child3,
+.macbook-pro-16-1-child4 {
+  top: 720.5px;
+}
+.macbook-pro-16-1-child2,
+.macbook-pro-16-1-child3,
+.macbook-pro-16-1-child4 {
+  top: 762.5px;
+}
+.macbook-pro-16-1-child3,
+.macbook-pro-16-1-child4 {
+  top: 805.5px;
+}
+.macbook-pro-16-1-child4 {
+  top: 847.5px;
+}
+.macbook-pro-16-1-child5,
+.macbook-pro-16-1-child6 {
+  position: absolute;
+  top: 89px;
+  left: 19px;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-mediumslateblue-100);
+  width: 161px;
+  height: 46px;
+}
+.macbook-pro-16-1-child6 {
+  left: 215px;
+}
+.back,
+.map {
+  position: absolute;
+  font-size: var(--font-size-13xl);
+  font-weight: 800;
+  font-family: var(--font-poppins);
+  text-align: left;
+  display: inline-block;
+  width: 107px;
+  height: 28px;
+}
+.back {
+  top: 89px;
+  left: 49px;
+  cursor: pointer;
+}
+.map {
+  top: 91px;
+  left: 250px;
+}
+body{
+  background-color: var(--color-whitesmoke-300);
+}
+
+
+
+#checkbox {
+  display: none;
+}
+
+.switch {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(199, 177, 177);
+  border-radius: 50%;
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(126, 126, 126);
+  box-shadow: 0px 0px 3px rgb(2, 2, 2) inset;
+}
+.switch svg {
+  width: 1.2em;
+}
+.switch svg path {
+  fill: rgb(48, 48, 48);
+}
+#checkbox:checked + .switch {
+  box-shadow: 0px 0px 1px rgb(151, 243, 255) inset,
+    0px 0px 2px rgb(151, 243, 255) inset, 0px 0px 10px rgb(151, 243, 255) inset,
+    0px 0px 40px rgb(151, 243, 255), 0px 0px 100px rgb(151, 243, 255),
+    0px 0px 5px rgb(151, 243, 255);
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(146, 180, 184);
+}
+#checkbox:checked + .switch svg {
+  filter: drop-shadow(0px 0px 5px rgb(151, 243, 255));
+}
+#checkbox:checked + .switch svg path {
+  fill: rgb(255, 255, 255);
+}
+
+
+
+button {
+  --color: #0077ff;
+  font-family: inherit;
+  display: inline-block;
+  width: 6em;
+  height: 2.6em;
+  line-height: 2.5em;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 20px;
+  font-size: 17px;
+  z-index: 1;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-radius: 6px;
+  position: relative;
+  margin-top: 90px;
+}
+
+button::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 150px;
+  height: 200px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+button:hover {
+  color: white;
+}
+
+button:before {
+  top: 100%;
+  left: 100%;
+  transition: 0.3s all;
+}
+
+button:hover::before {
+  top: -30px;
+  left: -30px;
+}

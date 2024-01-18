@@ -1,0 +1,59 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Camera Registration System</title>
+</head>
+
+<body>
+    <label for="locSearch">Search Location:</label>
+    <input type="text" id="locSearch">
+    <button id="searchButton">Find location</button>
+
+    <div id="map-container">
+        <div id="map"></div>
+    </div>
+
+    <div id="alerts-container">
+        <div id="alerts">
+            <h1>CyberKnights Demo</h1>
+
+            <!-- Use an anchor tag to create a link to the registration page -->
+            <a href="{{ url_for('registration') }}"><button>Registration Page</button></a>
+
+            <h2>Alerts will be displayed here</h2>
+            <h3><a href="./krishna/index.html">Capias Warning</a></h3>
+
+            <form action="/video" method="get">
+                <button type="submit">View Video</button>
+            </form>
+             <!-- <img src="{{ url_for('video_feed') }}"> -->
+
+            <div id="video-frame-box">
+                <!-- Video frame box content goes here -->
+                <video controls width="100%" loop autoplay>
+                    <!-- Add video source here -->
+                    <!-- <source src="./vid5.mp4" type="video/mp4"> -->
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div>
+                <h3>Control of PTZ Cameras</h3>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+    <!-- Google Maps API script -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtgpJc-aZE3yL9pC82NE4MefQHHkdbfM8&callback=initMap"
+        async defer></script>
+
+    <!-- Your custom JavaScript file -->
+</body>
+
+</html>

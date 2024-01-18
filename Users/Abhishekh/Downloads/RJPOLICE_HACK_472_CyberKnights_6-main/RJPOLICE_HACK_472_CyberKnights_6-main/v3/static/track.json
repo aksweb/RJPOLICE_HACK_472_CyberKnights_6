@@ -1,0 +1,61 @@
+[
+    {
+        "vehicle_number": "RJ45CE9504",
+        "image_url":"https://scontent.fdel29-1.fna.fbcdn.net/v/t39.30808-6/299952015_389560166696651_6551388352878255228_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=FNbPeHUgTS8AX-VSXd1&_nc_ht=scontent.fdel29-1.fna&oh=00_AfDMy29g0V3lj8X5NWPoctdFzWHeby19Kxu-fcHZv5vO5Q&oe=65A88ACB",
+        "coordinates_data": [
+            {"timestamp": "2024-01-14T00:04:00", "coordinates": {"latitude": 26.864321, "longitude": 75.810251}},
+            {"timestamp": "2024-01-14T00:04:30", "coordinates": {"latitude": 26.862954, "longitude": 75.809380}},
+            {"timestamp": "2024-01-14T00:05:00", "coordinates": {"latitude": 26.861687, "longitude": 75.808512}},
+            {"timestamp": "2024-01-14T00:05:30", "coordinates": {"latitude": 26.860420, "longitude": 75.807646}},
+            {"timestamp": "2024-01-14T00:06:00", "coordinates": {"latitude": 26.859152, "longitude": 75.806781}}
+        ]
+    },
+    
+    {
+        "vehicle_number": "RJ14pb5812",
+        "image_url":"https://c8.alamy.com/comp/TBXRN0/auto-rickshaw-jaipur-rajasthan-india-TBXRN0.jpg",
+        "coordinates_data": [
+            {"timestamp": "2024-01-14T00:06:30", "coordinates": {"latitude": 26.857884, "longitude": 75.805917}},
+            {"timestamp": "2024-01-14T00:07:00", "coordinates": {"latitude": 26.856616, "longitude": 75.805055}},
+            {"timestamp": "2024-01-14T00:07:30", "coordinates": {"latitude": 26.855348, "longitude": 75.804194}},
+            {"timestamp": "2024-01-14T00:08:00", "coordinates": {"latitude": 26.854080, "longitude": 75.803333}},
+            {"timestamp": "2024-01-14T00:08:30", "coordinates": {"latitude": 26.852812, "longitude": 75.802474}}
+        ]
+    },
+
+    {
+        "vehicle_number": "RJ45CE9506",
+        "image_url":"https://www.vedantawakeup.com/wp-content/uploads/2022/04/rajputana-cabs-banner.jpg",
+        "coordinates_data": [
+            {"timestamp": "2024-01-14T00:09:00", "coordinates": {"latitude": 26.851544, "longitude": 75.801615}},
+            {"timestamp": "2024-01-14T00:09:30", "coordinates": {"latitude": 26.850276, "longitude": 75.800758}},
+            {"timestamp": "2024-01-14T00:10:00", "coordinates": {"latitude": 26.849008, "longitude": 75.799902}},
+            {"timestamp": "2024-01-14T00:10:30", "coordinates": {"latitude": 26.847740, "longitude": 75.799046}},
+            {"timestamp": "2024-01-14T00:11:00", "coordinates": {"latitude": 26.846472, "longitude": 75.798192}}
+        ]
+    },
+
+    {
+        "vehicle_number": "RJ14TE1762",
+        "image_url":"https://5.imimg.com/data5/OM/SK/MY-19739833/car-hire-for-royal-wedding-in-jaipur.jpeg",
+        "coordinates_data": [
+            {"timestamp": "2024-01-14T00:11:30", "coordinates": {"latitude": 26.845204, "longitude": 75.797338}},
+            {"timestamp": "2024-01-14T00:12:00", "coordinates": {"latitude": 26.843936, "longitude": 75.796485}},
+            {"timestamp": "2024-01-14T00:12:30", "coordinates": {"latitude": 26.842668, "longitude": 75.795633}},
+            {"timestamp": "2024-01-14T00:13:00", "coordinates": {"latitude": 26.841400, "longitude": 75.794782}},
+            {"timestamp": "2024-01-14T00:13:30", "coordinates": {"latitude": 26.840132, "longitude": 75.793931}}
+        ]
+    },
+
+    {
+        "vehicle_number": "RJ14PC7689",
+        "image_url":"https://static.toiimg.com/thumb/msid-92028796,width-1280,height-720,resizemode-4/92028796.jpg",
+        "coordinates_data": [
+            {"timestamp": "2024-01-14T00:14:00", "coordinates": {"latitude": 26.838864, "longitude": 75.793080}},
+            {"timestamp": "2024-01-14T00:14:30", "coordinates": {"latitude": 26.837596, "longitude": 75.792230}},
+            {"timestamp": "2024-01-14T00:15:00", "coordinates": {"latitude": 26.836328, "longitude": 75.791381}},
+            {"timestamp": "2024-01-14T00:15:30", "coordinates": {"latitude": 26.835060, "longitude": 75.790532}},
+            {"timestamp": "2024-01-14T00:16:00", "coordinates": {"latitude": 26.833792, "longitude": 75.789683}}
+        ]
+    }
+]

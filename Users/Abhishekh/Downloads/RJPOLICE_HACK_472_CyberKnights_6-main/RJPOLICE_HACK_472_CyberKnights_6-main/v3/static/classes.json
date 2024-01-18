@@ -1,0 +1,6 @@
+[
+  {"timestamp": "2024-01-14T00:00:00", "classes": {"cars": 5, "bottle": 2, "persons": 10}},
+  {"timestamp": "2024-01-14T00:00:10", "classes": {"cars": 7, "bottle": 3, "persons": 15}},
+  {"timestamp": "2024-01-14T00:00:20", "classes": {"cars": 6, "bottle": 1, "persons": 12}},
+  {"timestamp": "2024-01-14T00:00:30", "classes": {"cars": 8, "bottle": 2, "persons": 18}}
+]

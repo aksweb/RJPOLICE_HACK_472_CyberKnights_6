@@ -1,0 +1,27 @@
+[
+    {
+        "vehicle_number": "RJ45CE9504",
+        "alert":"Stolen Vehicle",
+        "type": "Car"
+    },
+    {
+        "vehicle_number": "RJ14pb5812",
+        "alert":"Signal Break",
+        "type": "Auto"
+    },
+    {
+        "vehicle_number": "RJ45CE9506",
+        "alert":"Arrest Warrant",
+        "type":"SUV"
+    },
+    {
+        "vehicle_number": "RJ14TE1762",
+        "alert":"Terrorist Watchlist Alert",
+        "type":"SUV"
+    },
+    {
+        "vehicle_number": "RJ14PC7689",
+        "alert":"Stolen Vehicle",
+        "type":"Ambulance"
+    }
+]

@@ -1,0 +1,198 @@
+.groupChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  background-color: rgba(11, 218, 81, 0.74);
+  width: 1237px;
+  height: 76px;
+}
+.camera {
+  font-weight: 500;
+}
+.registraction {
+  font-weight: 600;
+}
+.cameraRegistraction {
+  position: absolute;
+  top: 9px;
+  left: 278px;
+  letter-spacing: 0.18em;
+  display: inline-block;
+  width: 671px;
+  height: 58px;
+}
+.rectangleParent {
+  position: absolute;
+  top: 58px;
+  left: 134px;
+  width: 1237px;
+  height: 76px;
+  cursor: pointer;
+  font-size: 39px;
+}
+.groupItem {
+  position: absolute;
+  top: -0.5px;
+  left: -0.5px;
+  border-radius: 50px;
+  background-color: #f9f0f0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  width: 612px;
+  height: 72px;
+  mix-blend-mode: linear-dodge;
+}
+.resolution {
+  position: absolute;
+  top: 16px;
+  left: 72px;
+  letter-spacing: 0.18em;
+  display: inline-block;
+  font-weight: 500;
+  width: 467px;
+  height: 40px;
+}
+.rectangleGroup {
+  position: absolute;
+  top: 239px;
+  left: 832px;
+  width: 611px;
+  height: 71px;
+}
+.recordingCapabilities {
+  position: absolute;
+  top: 19px;
+  left: 0;
+  letter-spacing: 0.18em;
+  display: inline-block;
+  font-weight: 500;
+  width: 573px;
+  height: 40px;
+}
+.rectangleContainer {
+  position: absolute;
+  top: 357px;
+  left: 137px;
+  width: 611px;
+  height: 71px;
+  font-size: 32px;
+}
+.model {
+  position: absolute;
+  top: 16px;
+  left: 62px;
+  letter-spacing: 0.18em;
+  display: inline-block;
+  font-weight: 500;
+  width: 467px;
+  height: 40px;
+}
+.groupDiv,
+.name {
+  position: absolute;
+  top: 239px;
+  left: 134px;
+  width: 611px;
+  height: 71px;
+}
+.name {
+  top: 11px;
+  left: 72px;
+  letter-spacing: 0.18em;
+  display: inline-block;
+  font-weight: 500;
+  width: 467px;
+  height: 40px;
+}
+.rectangleParent1,
+.rectangleParent2,
+.rectangleParent3 {
+  position: absolute;
+  top: 357px;
+  left: 832px;
+  width: 611px;
+  height: 71px;
+}
+.rectangleParent2,
+.rectangleParent3 {
+  top: 475px;
+}
+.rectangleParent3 {
+  top: 593px;
+}
+.macbookPro143Child,
+.rectangleParent4,
+.rectangleParent5 {
+  position: absolute;
+  top: 593px;
+  left: 145px;
+  width: 611px;
+  height: 71px;
+}
+.macbookPro143Child,
+.rectangleParent5 {
+  top: 475px;
+  left: 137px;
+}
+.macbookPro143Child {
+  top: 747px;
+  left: 576px;
+  border-radius: 50px;
+  width: 515px;
+  object-fit: cover;
+  mix-blend-mode: color-burn;
+}
+.register {
+  position: absolute;
+  top: 758px;
+  left: 676px;
+  font-size: 38px;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  color: #171fd3;
+  display: inline-block;
+  width: 315px;
+  height: 49px;
+}
+.vectorIcon,
+.vectorIcon1 {
+  position: absolute;
+  height: 4.18%;
+  width: 2.51%;
+  top: 7.64%;
+  right: 73.35%;
+  bottom: 88.19%;
+  left: 24.14%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.vectorIcon1 {
+  right: 25.33%;
+  left: 72.16%;
+}
+.locateMe {
+  position: absolute;
+  top: 664px;
+  left: 1212px;
+  font-size: 15px;
+  letter-spacing: 0.18em;
+  display: inline-block;
+  color: #5c1ce9;
+  width: 219px;
+  height: 40px;
+}
+.macbookPro143 {
+  position: relative;
+  background-color: #cefadc;
+  width: 100%;
+  height: 982px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 40px;
+  color: #000;
+  font-family: Inter;
+}
