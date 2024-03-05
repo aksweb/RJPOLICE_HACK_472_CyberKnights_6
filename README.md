@@ -1,5 +1,5 @@
 # RJPOLICE_HACK_472_CyberKnights_6
-# Project Name : Nazar
+# Project Name: Nazar
 # [Video Demonstration _(Click Here)_](https://www.youtube.com/watch?v=sDWuOFIDW-I) 
 ## Flow
 ![Control Dashboard](https://github.com/aksweb/RJPOLICE_HACK_472_CyberKnights_6/blob/main/ml/flow.png)
@@ -42,24 +42,24 @@ ArcFace is a state-of-the-art face recognition model. The system captures video 
 
 ## 3. Crowd Congestion Detection using CSRNet:
 
-CSRNet, a deep learning model designed for counting and density estimation in crowded scenes. The system captures video from a camera source, processes the frames using CSRNet, and estimates the crowd density, identifying congestion areas.
+CSRNet is a deep learning model designed for counting and density estimation in crowded scenes. The system captures video from a camera source, processes the frames using CSRNet, and estimates the crowd density, identifying congestion areas.
 
- **Visualization:** Provides visual representation of crowd density and congestion areas.
+ **Visualization:** Provides a visual representation of crowd density and congestion areas.
 
  ## 4. Suspicious Object Detection using YOLOv5:
  
-YOLOv5 is a powerful object detection model. The system captures video from a camera source, processes the frames using YOLOv5, and identifies and highlights suspicious objects in real-time.
+YOLOv5 is a powerful object detection model. The system captures video from a camera source, processes the frames using YOLOv5, and identifies and highlights suspicious objects in real time.
 
 **Visual Alerts:** Provides visual alerts or annotations for detected suspicious objects.
 
-## 5. Detection of Violence, Riots, Crimes, Accidents using YOLOv5:
+## 5. Detection of Violence, Riots, Crimes, and Accidents using YOLOv5:
 
 YOLOv5 is a state-of-the-art object detection model, to detect and identify instances of violence, riots, crimes, and accidents in video streams. The system captures real-time video from a camera source, processes the frames using YOLOv5, and provides alerts or annotations for the detected incidents.
  ![Face Detection Video](ml/sim2.gif)
 # HOW TO ACCESS DEMO
 # Camera Registration System
 
-This project is a Camera Registration System developed using the MERN stack (MongoDB, Express.js, React.js, Node.js).
+This project is a Camera Registration System developed using the MEFN stack (MongoDB, Express.js, Flask, Node.js).
 
 ## Prerequisites
 
@@ -106,7 +106,7 @@ Before running the application locally, make sure you have the following install
     start index.html
     ```
 
-5. **In case it doesn't opened:**
+5. **In case it doesn't open:**
 
     - Open your browser and go to [http://localhost:3000](http://localhost:3000).
 
@@ -114,8 +114,8 @@ Before running the application locally, make sure you have the following install
 
 ## Additional Notes
 
-- The application uses the MERN stack, with React for the frontend, Express.js for the backend, and MongoDB for data storage.
-- Make sure to set up Google Maps API key in the frontend (`frontend/js/script.js`) for map functionality.
+- The application uses Flask for the frontend, Express.js for the backend, and MongoDB for data storage.
+- Make sure to set up the Google Maps API key in the frontend (`frontend/js/script.js`) for map functionality.
 - Adjust the paths and configurations as needed for your specific setup.
 
 Feel free to contribute, report issues, or provide feedback!
